@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+            <h2>Registration Form</h2>
+        </center>
+        <table cellspacing="8" border="0" cellpadding="10" width="100%">
+            <form action="action.html" method="get">
+            
+            <tr>
+                <td><label for="f-name">First Name:</label></td>
+                <td><input type="text" placeholder="Enter First Name" name="f-name" id="f-name"></td>
+            </tr>
+            <tr>
+                <td><label for="l-name">Last Name:</label></td>
+                <td><input type="text" placeholder="Enter Last Name" name="l-name" id="l-name"></td>
+            </tr>
+            <tr>
+                <td><label for="pswd">Password:</label></td>
+                <td><input type="password" id="pswd" name="pswd"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    &nbsp&nbsp
+                    <label for="female">female:</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    &nbsp&nbsp
+                    <label for="other">Other:</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" name="age" id="age"></td>
+            </tr>
+            <tr>
+                <td><label>Preferences:</label></td>
+                <td><label for="acrylic">Acrylic Painting:</label>
+                    <input type="checkbox" id="acrylic" name="Preferences" value="acrylic">
+                    <label for="oil">Oil Painting:</label>
+                    <input type="checkbox" id="oil" name="Preferences" value="oil">
+                    <label for="Water-clr ">Water Color painting:</label>
+                    <input type="checkbox" id="Water-clr" name="Preferences" value="Water-clr">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="occupation">Occupation</label></td>
+                 <td> <select name="occupation" id="occupation">
+                        <option disabled selected>--select--</option>
+                        <option value="student">Student</option>
+                        <option value="job">Job</option>
+
+                    </select> 
+                  </td>
+            </tr>
+            <tr>
+               <td><label for="bio">Bio:</label></td> 
+               <td><textarea name="bio" id="id" rows="5" cols="20">Share few lines about
+                Yourself...
+               </textarea></td>
+            </tr>
+        </table>
+        <center>
+            <input type="submit">
+            <input type="reset">
+            </form>
+        </center>
+    </fieldset>
+</body>
+</html>
